@@ -63,12 +63,12 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-let car33 = inventory[32];
+const car33 = inventory[32];
 console.log('Car 33 is a ' + car33.car_year + ' ' + car33.car_make + ' ' + car33.car_model + '.');
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory[inventory.length - 1];
+const lastCar = inventory[inventory.length - 1];
 console.log(lastCar.car_make + ' ' + lastCar.car_model);
 
 // ==== Challenge 3 ====
@@ -82,7 +82,7 @@ console.log(lastCar.car_make + ' ' + lastCar.car_model);
 
 // carModels.sort();
 
-let carModels = inventory.map(car => car.car_model);
+const carModels = inventory.map(car => car.car_model);
 carModels.sort();
 
 console.log(carModels);
@@ -96,7 +96,7 @@ console.log(carModels);
 // }
 // console.log(carYears);
 
-let carYears = inventory.map(car => car.car_year);
+const carYears = inventory.map(car => car.car_year);
 console.log(carYears);
 
 // ==== Challenge 5 ====
@@ -110,7 +110,7 @@ console.log(carYears);
 //     }
 // }
 
-let oldCars = inventory.filter(car => car.car_year < 2000);
+const oldCars = inventory.filter(car => car.car_year < 2000);
 
 console.log(oldCars.length); 
 
@@ -124,7 +124,7 @@ console.log(oldCars.length);
 //     }
 // }
 
-let BMWAndAudi = inventory.filter(car => car.car_make === 'BMW' || car.car_make === 'Audi');
+const BMWAndAudi = inventory.filter(car => car.car_make === 'BMW' || car.car_make === 'Audi');
 console.log(JSON.stringify(BMWAndAudi));
 
 
